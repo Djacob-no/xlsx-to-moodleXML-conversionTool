@@ -1,0 +1,28 @@
+  <question type="numerical">
+    <name>
+      <text>{{questionID}}</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">{{{questionTxt}}}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>{{questionID}}</idnumber>
+
+  {{#numAnswers}}{{>numAnswer}}{{/numAnswers}}
+
+    <unitgradingtype>0</unitgradingtype>
+    <unitpenalty>0.1000000</unitpenalty>
+    <showunits>3</showunits>
+    <unitsleft>0</unitsleft>
+
+    <tags>
+      <tag><text>{{topic}}</text></tag>
+      <tag><text>{{subtopic}}</text></tag>
+      <tag><text>autoimported</text></tag>
+    </tags>
+  </question>

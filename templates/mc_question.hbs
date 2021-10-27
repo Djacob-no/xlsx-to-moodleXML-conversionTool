@@ -1,0 +1,39 @@
+
+
+
+  <question type="multichoice">
+    <name>
+      <text>{{questionID}}</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>{{{questionTxt}}}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>{{questionID}}</idnumber>
+    <single>{{singleAnswer}}</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    {{#answers}}{{>answer}}{{/answers}}
+    <tags>
+      <tag><text>{{topic}}</text></tag>
+      <tag><text>{{subtopic}}</text></tag>
+      <tag><text>autoimported</text></tag>
+    </tags>
+  </question>
+
+

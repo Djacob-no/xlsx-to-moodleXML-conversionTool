@@ -1,0 +1,23 @@
+
+
+  <question type="truefalse">
+    <name>
+      <text>{{questionID}}</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>{{{questionTxt}}}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber>{{questionID}}</idnumber>
+    {{#answers}}{{>answer}}{{/answers}}
+    <tags>
+      <tag><text>{{topic}}</text></tag>
+      <tag><text>{{subtopic}}</text></tag>
+      <tag><text>autoimported</text></tag>
+    </tags>
+  </question>

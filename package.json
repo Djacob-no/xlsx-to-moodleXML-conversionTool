@@ -1,0 +1,18 @@
+{
+  "name": "questionbank-converter",
+  "version": "1.0.0",
+  "description": "converts excel sheets to moodle appropriate formats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "xls-to-json": "^2.1.0",
+    "xlsx-to-json": "^0.3.0",
+    "multer": "1.1.0"
+  }
+}
